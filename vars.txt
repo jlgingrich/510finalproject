@@ -1,0 +1,77 @@
+https://www.kaggle.com/datasets/vagifa/ethereum-frauddetection-dataset?resource=download
+
+REMOVED VARS:
+-x  "Unnamed: 0": "Index"-1 (Leftover from previous export, removed)
+-x  Index: the index number of a row (Leftover from original export, regenerated and assigned as df index)
+-x  Address: the address of the ethereum account (In this dataset, the maximum number of transactions from an address is 2, so this isn't really relevant)
+
+RESPONSE:
+Y   FLAG: whether the transaction is fraud or not (22% are True, rest False)
+
+PREDICTORS:
+x1  Avg min between sent tnx: Average time between sent transactions for account in minutes
+x2  Avgminbetweenreceivedtnx: Average time between received transactions for account in minutes
+
+x3  TimeDiffbetweenfirstand_last(Mins): Time difference between the first and last transaction
+
+x4  Sent_tnx: Total number of sent normal transactions
+x5  Received_tnx: Total number of received normal transactions
+
+x6  NumberofCreated_Contracts: Total Number of created contract transactions
+
+x7  UniqueReceivedFrom_Addresses: Total Unique addresses from which account received transactions
+x8  UniqueSentTo_Addresses20: Total Unique addresses from which account sent transactions
+
+x9  MinValueReceived: Minimum value in Ether ever received
+x10 MaxValueReceived: Maximum value in Ether ever received
+x11 AvgValueReceived: Average value in Ether ever received
+
+x12 MinValSent: Minimum value of Ether ever sent
+x13 MaxValSent: Maximum value of Ether ever sent
+x14 AvgValSent: Average value of Ether ever sent
+
+x15 MinValueSentToContract: Minimum value of Ether sent to a contract
+x16 MaxValueSentToContract: Maximum value of Ether sent to a contract
+x17 AvgValueSentToContract: Average value of Ether sent to contracts
+
+x18 TotalTransactions(IncludingTnxtoCreate_Contract): Total number of transactions
+
+x19 TotalEtherSent:Total Ether sent for account address
+x20 TotalEtherReceived: Total Ether received for account address
+
+x21 TotalEtherSent_Contracts: Total Ether sent to Contract addresses
+x22 TotalEtherBalance: Total Ether Balance following enacted transactions
+
+x23 TotalERC20Tnxs: Total number of ERC20 token transfer transactions
+
+x24 ERC20TotalEther_Received: Total ERC20 token received transactions in Ether
+x25 ERC20TotalEther_Sent: Total ERC20token sent transactions in Ether
+x26 ERC20TotalEtherSentContract: Total ERC20 token transfer to other contracts in Ether
+
+x27 ERC20UniqSent_Addr: Number of ERC20 token transactions sent to Unique account addresses
+x28 ERC20UniqRec_Addr: Number of ERC20 token transactions received from Unique addresses
+x29 sent addr.1
+x30 ERC20UniqRecContractAddr: Number of ERC20token transactions received from Unique contract addresses
+
+x31 ? ERC20 avg time between sent tnx
+x32 ? ERC20 avg time between rec tnx
+x33 ? ERC20 avg time between rec 2 tnx
+x34 ? ERC20 avg time between contract tnx
+
+x35 ERC20AvgTimeBetweenSent_Tnx: Average time between ERC20 token sent transactions in minutes
+x36 ERC20AvgTimeBetweenRec_Tnx: Average time between ERC20 token received transactions in minutes
+x37 ERC20AvgTimeBetweenContract_Tnx: Average time ERC20 token between sent token transactions
+
+x38 ERC20MinVal_Rec: Minimum value in Ether received from ERC20 token transactions for account
+x39 ERC20MaxVal_Rec: Maximum value in Ether received from ERC20 token transactions for account
+x40 ERC20AvgVal_Rec: Average value in Ether received from ERC20 token transactions for account
+
+x41 ERC20MinVal_Sent: Minimum value in Ether sent from ERC20 token transactions for account
+x42 ERC20MaxVal_Sent: Maximum value in Ether sent from ERC20 token transactions for account
+x43 ERC20AvgVal_Sent: Average value in Ether sent from ERC20 token transactions for account
+
+x44 ERC20 uniq sent token name: Number of Unique ERC20 tokens transferred
+x45 ERC20 uniq rec token name: Number of Unique ERC20 tokens received
+
+x46 ERC20 most sent token type: Most sent token for account via ERC20 transaction
+x47 ERC20_most_rec_token_type: Most received token for account via ERC20 transactions
